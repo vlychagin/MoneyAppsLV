@@ -22,6 +22,7 @@ Money Money::operator+(Money &money) const
 	// Знаковое сложение м.б. вследствие операций с отрицательными
 	// значениями из операции вычитангия
 	long result = value1 + value2;
+
 	return Money(result/100, abs(result % 100));
 } // Money::operator+
 
